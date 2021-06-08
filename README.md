@@ -10,7 +10,7 @@ Never forget to clone this project and install needed dependencies!
 
 ### Environments
 
-Replace the `.env.example` file name to `.env` then replace all variable values to your own.
+Replace the `example.env` file name to `.env` then replace all variable values to your own.
 
 ### Running on
 
