@@ -45,3 +45,7 @@ npm run start:dev
 ```
 
 will rerun the compiled code on every compilation (using nodemon)!
+
+## Example Output
+
+![](https://cdn.discordapp.com/attachments/760715805905387550/851697566517428224/Screen_Shot_2021-06-08_at_1.38.24_PM.png)
