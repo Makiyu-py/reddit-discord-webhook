@@ -8,11 +8,27 @@ Send Reddit image posts on a certain interval as a Discord webhook!
 
 Never forget to clone this project and install needed dependencies!
 
+And also...
+
+#### Customization
+
+You can customize the cron schedule and subreddit by adding arguments to the `RedditDiscordWebhook` class, for example:
+
+```ts
+const rtw = new RedditDiscordWebhook({
+	webhookUrl: 'https://discord.com/api/webhooks/:webhook_id/:webhook_token', // your webhook url, defaults to the WEBHOOK_URL env
+	cronSchedule: '* * * * *', // changes cron schedule
+	subreddit: 'hololive', // changes subreddit you want to get from
+	cronTZ: 'Asia/Tokyo', // add a specific timezone (https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/tz-offset/index.d.ts#L6) to use for your cron schedule
+});
+rtw.start(); // starts the cron
+```
+
 ### Environments
 
 Replace the `example.env` file name to `.env` then replace all variable values to your own.
 
-### Running on
+### Running
 
 #### Production
 
